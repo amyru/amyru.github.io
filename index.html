@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <script src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="coin-slider.js"></script>
+		<link rel="stylesheet" href="coin-slider-styles.css" type="text/css" />
+
 		
 	</head>
 	<body>
@@ -22,18 +27,50 @@
 
 		<div id="start">
 			<h1 class="title">Amy Rudolph</h1>
+			<img class="title_img" src="keyboard.jpg">
 			<h1 class="title">Climbing the mountain that is Web Development</h1>
-			<img src="keyboard.jpg">
 		</div>
 		
 		<div id="page1">
 		  <a id="about"></a>
-		    About page content goes here.
-		</div>
+	  	<section>
+		    <h1 class="title">ABOUT ME</h1>
+		    <p>
+		    	My name is Amy Rudolph and I am a web developer.
+		    	I have been dreaming up ideas for web apps for a long time and I am exited that with my growing skill set I now have the freedom and ability to realise them.
+					</br></br>
+		    	If I am not in front of my Mac I am probably baking, at yoga, watching a movie or at the theatre.
+		    	</br></br>
+		    	I love hearing from inspiring, imaginative people so please contact me on Twitter or LinkedIn.
+		    </p>
+	    </section>
+	    <section class="project">
+	    <!-- <div id="chart_div"></div> -->
+	    <h1 class="title">SKILLS</h1>
+	    <table>
+	    	<tr>
+	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
+	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
+	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
+	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
+	    	</tr>
+	    	<tr>
+	    		<td>Ruby, Rails</td>
+	    		<td>JS, JQuery</td>
+	    		<td>HTML, CSS3</td>
+	    		<td>Git</td>
+	    	</tr>
+	    </table>
+	    </section>
+	  </div>
 
 		<div id="page2">
 		  <a id="portfolio"></a>
-		    Portfolio page content goes here.
+		  	<div class="box sunrise"><img src="http://workshop.rs/projects/coin-slider/games/prince_of_persia.jpg"/></div>
+				<div class="slider">
+				    <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
+				</div>
+			  
 		</div>
 
 		<div id="page3">
@@ -43,6 +80,7 @@
 
 		<script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="Chart.js"></script>
     <script>
       $(document).foundation();
     </script>

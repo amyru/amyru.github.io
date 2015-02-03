@@ -2,42 +2,29 @@
     font-family: 'Source Sans Pro', sans-serif !important;
 }
 
+/*section setup*/
+
 #start {
-	height: 1000px;
 	background-color: #e74c3c;
 }
 
 #page1 {
-	height: 1000px;
-	background-color: green;
+	
 }
 
 #page2 {
-	height: 1000px;
+	background-color: green;
 }
 
 #page3 {
-	height: 1000px;
+	
 	background-color: red;
 }
 
-ul {
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: blue;
-  height: 60px;
-}
+/*nav bar*/
 
-a {
-	width: 60px;
-}
 
-li {
-	display: inline;
-	width: 60px;
-	margin-top: 10px;
-}
+/*start section*/
 
 .title{
 	font-family: Impact;
@@ -46,8 +33,140 @@ li {
 	text-align: center;
 }
 
-img {
+.title_img {
 	margin-top: 50px;
 	width: 100%;
 	opacity: .5;
 }
+
+/*about section*/
+
+section {
+	text-align: center;
+	background-color: pink;
+}
+
+p {
+	margin-top: 50px !important;
+	display: inline-block;
+	width: 60% !important;
+	max-width: 800px !important;
+	min-width: 280px !important;
+	text-align: center !important;
+	margin-bottom: 100px !important;
+	font-size: 1.5em !important;
+}
+
+/*skills section*/
+
+/*#chart_div {
+	width: 80%;
+	height: 500px;
+	padding: 20px 20px 20px 20px;
+
+}*/
+
+.project {
+	background-color: white;
+	margin-bottom: 10%;
+}
+
+table {
+	text-align: center !important; 
+	width: 80% !important;
+	height: 20%;
+	margin-left: 10%;
+	/*margin-top: 10%;*/
+	/*position: absolute;*/
+	border: none !important;
+}
+
+tr {
+	background: none !important;
+}
+
+td {
+	text-align: center !important;
+
+}
+
+.image {
+	width: 50px;
+	height: 50px;
+	margin: 0 !important;
+}
+
+
+/*projects*/
+
+.box { 
+  width: 880px;
+  height: 330px;
+  border-radius: .5em;
+  margin-left: 10%;
+}
+
+.box img { 
+	display: block;  
+	width: 100%; 
+	height: 100%;
+	border-radius: .5em;
+}
+
+.sunrise {
+  position: absolute;  /* remove from flow so sunset is placed on top */
+
+  /*background:  url(sunrise.jpg) no-repeat;*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+
+.slider {
+  /* set initial width */
+  width: 520px;
+         
+  /* hide the content that overflows (to allow second box to show through) */
+  overflow: hidden;
+  display: inline-block;
+           
+	-webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  
+  -webkit-transition: width 1.2s ease-in-out;
+  -moz-transition: width 1.2s ease-in-out;
+  -ms-transition: width 1.2s ease-in-out;
+  -o-transition: width 1.2s ease-in-out;
+  transition: width 1.2s ease-in-out;
+  
+  /* give negative margin to remove gap caused by left hand skew */
+  margin-left: -76px;
+  border-right: 10px solid ghostwhite;
+   
+  /* hide pointer events for unseen content */
+  pointer-events: none;
+}
+
+.sunset {
+  /* skew back by negative of parent’s skew so contents is upright */
+  transform: skewX(20deg);
+  margin-left: 76px !important; /* give margin to push content away from left slanted edge */
+  /*background: url(sunset-elephant.jpg) no-repeat;*/
+  pointer-events: auto;    /* allow pointer events for the box */
+}
+
+/* make first box bigger on hover, and smaller when hover second box */
+.slider:hover {
+    width: 760px;
+}
+        
+.sunrise:hover + .slider { 
+    width: 250px;
+}
+
+
+
+
+
+
