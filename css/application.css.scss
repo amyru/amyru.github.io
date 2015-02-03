@@ -14,6 +14,8 @@
 
 #page2 {
 	background-color: green;
+	padding-left: 20% !important;
+	padding-top: 10px;
 }
 
 #page3 {
@@ -99,11 +101,14 @@ td {
 
 /*projects*/
 
+/*.wrap {
+	margin: 5em !important;
+}*/
+
 .box { 
   width: 880px;
   height: 330px;
   border-radius: .5em;
-  margin-left: 10%;
 }
 
 .box img { 
@@ -111,6 +116,14 @@ td {
 	width: 100%; 
 	height: 100%;
 	border-radius: .5em;
+}
+
+.sunset {
+  /* skew back by negative of parent’s skew so contents is upright */
+  transform: skewX(20deg);
+  margin-left: 76px !important; /* give margin to push content away from left slanted edge */
+  /*background: url(sunset-elephant.jpg) no-repeat;*/
+  pointer-events: auto;    /* allow pointer events for the box */
 }
 
 .sunrise {
@@ -148,13 +161,6 @@ td {
   pointer-events: none;
 }
 
-.sunset {
-  /* skew back by negative of parent’s skew so contents is upright */
-  transform: skewX(20deg);
-  margin-left: 76px !important; /* give margin to push content away from left slanted edge */
-  /*background: url(sunset-elephant.jpg) no-repeat;*/
-  pointer-events: auto;    /* allow pointer events for the box */
-}
 
 /* make first box bigger on hover, and smaller when hover second box */
 .slider:hover {
