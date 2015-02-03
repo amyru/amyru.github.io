@@ -14,7 +14,7 @@
 
 #page2 {
 	background-color: green;
-	padding-left: 20% !important;
+	padding-left: 25% !important;
 	padding-top: 10px;
 }
 
@@ -101,9 +101,17 @@ td {
 
 /*projects*/
 
-/*.wrap {
-	margin: 5em !important;
-}*/
+.wrap {
+	margin-bottom: 10px !important;
+}
+
+.project-title {
+	font-family: Impact;
+	color: #ecf0f1;
+	text-align: center;
+	margin-left: -25%;
+
+}
 
 .box { 
   width: 880px;
