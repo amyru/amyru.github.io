@@ -7,12 +7,13 @@
 		<link rel="stylesheet" href="css/application.css.scss">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
     <script src="js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script type="text/javascript" src="coin-slider.js"></script>
-		<link rel="stylesheet" href="coin-slider-styles.css" type="text/css" />
-
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		
 	</head>
 	<body>
@@ -26,79 +27,139 @@
 		</div>
 
 		<div id="start">
-			<h1 class="title">Amy Rudolph</h1>
-			<img class="title_img" src="keyboard.jpg">
-			<h1 class="title">Climbing the mountain that is Web Development</h1>
+			<div class="parallax-background">
+			  <h1 class="title">Amy Rudolph,</br>Climbing the mountain that is Web Development</h1>
+				<img class="title_img" src="keyboard.jpg"/>
+			</div>
 		</div>
 		
-		<div id="page1">
-		  <a id="about"></a>
-	  	<section>
-		    <h1 class="title">ABOUT ME</h1>
-		    <p>
-		    	My name is Amy Rudolph and I am a web developer.
-		    	I have been dreaming up ideas for web apps for a long time and I am exited that with my growing skill set I now have the freedom and ability to realise them.
-					</br></br>
-		    	If I am not in front of my Mac I am probably baking, at yoga, watching a movie or at the theatre.
-		    	</br></br>
-		    	I love hearing from inspiring, imaginative people so please contact me on Twitter or LinkedIn.
-		    </p>
-	    </section>
-	    <section class="project">
-	    <!-- <div id="chart_div"></div> -->
-	    <h1 class="title">SKILLS</h1>
-	    <table>
-	    	<tr>
-	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
-	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
-	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
-	    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
-	    	</tr>
-	    	<tr>
-	    		<td>Ruby, Rails</td>
-	    		<td>JS, JQuery</td>
-	    		<td>HTML, CSS3</td>
-	    		<td>Git</td>
-	    	</tr>
-	    </table>
-	    </section>
-	  </div>
+		<div class="parallax-content">
+			<div id="page1">
+			  <a id="about"></a>
+		  	<section id="first_section">
+			    <h1 class="title_about">Amy Rudolph</h1>
+			    <h2 class="title_job">Web Developer</h2>
+			    <p id="first">
+			    	
+			    </p>
+		    </section>
+			
+			<!-- timeline section -->
+				<section id="cd-timeline" class="cd-container">
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img_trans.gif" alt="Picture">
+						</div> <!-- cd-timeline-img -->
 
-		<div id="page2">
-		  <a id="portfolio"></a>
-		  <h1 class="project-title">PROJECTS</h1>
-		  <div class="wrap">
-		  	<div class="box sunrise"><img src="http://workshop.rs/projects/coin-slider/games/prince_of_persia.jpg"/></div>
-				<div class="slider">
-				  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
-				</div>
-			</div>
-			<div class="wrap">
-		  	<div class="box sunrise"><img src="http://workshop.rs/projects/coin-slider/games/prince_of_persia.jpg"/></div>
-				<div class="slider">
-				  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
-				</div>
-			</div>
-			<div class="wrap">
-		  	<div class="box sunrise"><img src="http://workshop.rs/projects/coin-slider/games/prince_of_persia.jpg"/></div>
-				<div class="slider">
-				  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
-				</div>
-			</div>			  
-		</div>
+						<div class="cd-timeline-content">
+							<h2>Hello there</h2>
+							<p>My name is Amy Rudolph and I am a web developer.
+			    	I have been dreaming up ideas for web apps for a long time and I am exited that with my growing skill set I now have the freedom and ability to realise them.</p>
+							<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+							<!-- <span class="cd-date">Jan 14</span> -->
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
 
-		<div id="page3">
-		  <a id="contact"></a>
-		  <h1 class="project-title">CONTACT</h1>
-		  <div id="contactDetails">
-				<ul>
-					<li><a href="mailto:amy.rudolph@live.co.uk"><img id='mail' src="img_trans.gif"/></a></li>
-					<li><a href="http://goo.gl/5h5JiN"><img id='linkedin' src="img_trans.gif"/></a></li>
-					<li><a href="https://github.com/amyru"><img id='github' src="img_trans.gif"/></a></li>
-					<li><a href="https://twitter.com/amyru1"><img id='twitter' src="img_trans.gif"/></a></li>
-				</ul>
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-movie">
+							<img src="img_trans.gif" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Bitmaker Labs Dec '14</h2>
+							<p>In December 2014 I completed a 9 week web development bootcamp course at Bitmaker Labs, Toronto. The course taught me a wide range of technologies both front and back-end.
+							<a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Oct 20</span>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img_trans.gif" alt="Picture">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Interests</h2>
+							<p>If I am not in front of my Mac I am probably baking, at yoga, watching a movie or at the theatre.</p>
+							<!-- <a href="#0" class="cd-read-more">Read more</a> -->
+							<!-- <span class="cd-date">Jan 24</span> -->
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-location">
+							<img src="img_trans.gif" alt="Location">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>What I am doing now</h2>
+							<p>Currently I am working on any idea that springs in my head and working with insoirational people.</p>
+							<!-- <a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Feb 14</span> -->
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+				</section> <!-- cd-timeline -->
+
+		    <section class="project">
+		    <!-- <div id="chart_div"></div> -->
+		    <h1 class="title_about">SKILLS</h1>
+		    <table>
+		    	<tr>
+		    		<td><img class="image" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/ruby-128.png" /></td>
+		    		<td><img class="image" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png" /></td>
+		    		<td><img class="image" src="http://cdn.flaticon.com/png/256/23735.png" /></td>
+		    		<td><img class="image" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" /></td>
+		    		<td><img class"image" src="http://cdn.flaticon.com/png/256/29165.png" width="40px" height="40px"/></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Ruby, Rails</td>
+		    		<td>JS, JQuery</td>
+		    		<td>HTML, CSS3</td>
+		    		<td>Git</td>
+		    		<td>SQL</td>
+		    	</tr>
+		    </table>
+		    </section>
+		  </div>
+
+			<div id="page2">
+			  <a id="portfolio"></a>
+			  <h1 class="project-title">PROJECTS</h1>
+				<div class="wrap">
+			  	<div class="box sunrise"><img src="worldreligion.png"/></div>
+					<div class="slider">
+					  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
+					</div>
+				</div>			  
+			  <div class="wrap">
+			  	<div class="box sunrise"><img src="travel.png"/></div>
+					<div class="slider">
+					  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
+					</div>
+				</div>
+				<div class="wrap">
+			  	<div class="box sunrise"><img src="airsalon.png"/></div>
+					<div class="slider">
+					  <div class="box sunset"><img src="http://workshop.rs/projects/coin-slider/games/spiderman_shattered_dimensions.jpg" /></div>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<div id="page3">
+			  <a id="contact"></a>
+			  <h1 class="contact-title">CONTACT</h1>
+			  <div class="row">				
+					<a href="mailto:amy.rudolph@live.co.uk"><img id='mail' src="img_trans.gif"/></a>	
+					<a href="http://goo.gl/5h5JiN"><img id='linkedin' src="img_trans.gif"/></a>	
+					<a href="https://github.com/amyru"><img id='github' src="img_trans.gif"/></a>	
+					<a href="https://twitter.com/amyru1"><img id='twitter' src="img_trans.gif"/></a>	
+				</div>
+			</div>
+
+			<div class="footer">
+				<p class="copy">&copy; 2015 Amy Rudolph.</p>
+			</div>
+		</div> <!-- end paralax_content -->
 
 		<script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

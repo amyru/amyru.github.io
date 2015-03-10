@@ -5,49 +5,96 @@
 /*section setup*/
 
 #start {
-	background-color: #e74c3c;
-	height: 1000px;
-}
+	text-align: center !important;
+	background: #e74c3c;
+	opacity: .5;
 
+}
+ 
 #page1 {
+	text-align: center !important;
+	background-color: #ecf0f1;
 }
 
 #page2 {
 	background-color: green;
-	/*padding-left: 25% !important;*/
 	padding-top: 10px;
 }
 
 #page3 {
-	background-color: #bdc3c7;
+	background-color: #EEEEEE;
+	text-align: center;
 }
 
-/*nav bar*/
+/*nav bar
 
 
 /*start section*/
 
+.parallax-background {
+	background-color: #0078A0;
+	height: 620px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+}
+
 .title{
 	font-family: Impact;
 	color: #ecf0f1;
-	margin: 0;
-	text-align: center;
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	margin-left: 15%;
+	margin-top: 20%;
 }
 
 .title_img {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
+	
 	width: 100%;
-	opacity: .5;
+	/*opacity: .5;*/
+	z-index: -1 !important;
+	/*position: relative;*/
+	-webkit-filter: emrald(100%);
 }
 
 /*about section*/
 
-section {
-	text-align: center;
-	background-color: pink;
+.parallax-content {
+	max-width: 100%;
+	position: relative;
+	top: 400px;
+	/*padding: 50px;*/
+	/*font-size: 20px;*/
+	/*background-color: #fff;*/
 }
 
-p {
+.title_about {
+	font-family: Montserrat, Helvetica;
+	font-size: 75px;
+	font-weight: 700 !important;
+	color: #ecf0f1;
+	margin:0;
+}
+
+.title_job {
+	font-family: Helvetica;
+	font-size: 40px;
+	font-style: italic;
+	color: #ecf0f1;
+}
+
+#first_section {
+	text-align: center;
+	background-color: #e74c3c;
+}
+
+#first {
 	margin-top: 50px !important;
 	display: inline-block;
 	width: 60% !important;
@@ -56,29 +103,21 @@ p {
 	text-align: center !important;
 	margin-bottom: 100px !important;
 	font-size: 1.5em !important;
+	height: 100px;
 }
 
 /*skills section*/
 
-/*#chart_div {
-	width: 80%;
-	height: 500px;
-	padding: 20px 20px 20px 20px;
-
-}*/
-
 .project {
 	background-color: white;
-	margin-bottom: 10%;
+	/*margin-bottom: 10%;*/
 }
 
 table {
 	text-align: center !important; 
 	width: 80% !important;
 	height: 20%;
-	margin-left: 10%;
-	/*margin-top: 10%;*/
-	/*position: absolute;*/
+	margin-left: 10% !important;
 	border: none !important;
 }
 
@@ -88,27 +127,22 @@ tr {
 
 td {
 	text-align: center !important;
+	width: 100px !important;
 
 }
 
 .image {
-	width: 50px;
-	height: 50px;
+	width: 50px !important;
+	height: 50px !important;
 	margin: 0 !important;
 }
 
-
 /*projects*/
-
-.wrap {
-	/*margin-bottom: 10px !important;*/
-}
 
 .project-title {
 	font-family: Impact;
 	color: #ecf0f1;
 	text-align: center;
-	/*margin-left: -25%;*/
 
 }
 
@@ -171,18 +205,29 @@ td {
 
 /* make first box bigger on hover, and smaller when hover second box */
 .slider:hover {
-    width: 760px;
+  width: 760px;
 }
         
 .sunrise:hover + .slider { 
-    width: 250px;
+  width: 250px;
 }
 
 /*contact*/
 
-#contactDetails {
-	list-style-type: none;
-	
+.contact-title {
+	font-family: Impact;
+	color: #6C7A89;
+	text-align: center;
+}
+
+.row a{
+	display: inline;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.row {
+	margin-top: 40px !important;
 }
 
 #mail {
@@ -211,6 +256,15 @@ td {
 	width: 46px;
   background: url(media.jpg) -141px 0;
   zoom: 1.5;
+}
+
+/*footer*/
+
+.footer {
+	background-color: grey;
+	text-align: center;
+	color: black;
+	padding: 50px;
 }
 
 
