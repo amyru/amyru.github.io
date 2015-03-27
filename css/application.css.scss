@@ -108,9 +108,19 @@
 
 /*skills section*/
 
+.title_skills {
+	font-family: Helvetica;
+	font-size: 50px;
+	font-weight: 700 !important;
+	color: #2c3e50;
+	margin:0;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
 .project {
 	background-color: white;
-	/*margin-bottom: 10%;*/
+	/*margin-top: 200px;*/
 }
 
 table {
@@ -140,10 +150,14 @@ td {
 /*projects*/
 
 .project-title {
-	font-family: Impact;
 	color: #ecf0f1;
 	text-align: center;
-
+	font-family: Helvetica;
+	font-size: 50px;
+	font-weight: 700 !important;
+	margin:0;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 .box { 
@@ -215,9 +229,11 @@ td {
 /*contact*/
 
 .contact-title {
-	font-family: Impact;
+	font-family: Helvetica;
 	color: #6C7A89;
 	text-align: center;
+	font-size: 50px;
+	padding-top: 20px;
 }
 
 .row a{

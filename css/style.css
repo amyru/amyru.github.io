@@ -155,15 +155,23 @@ header h1 {
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: url("http://www.online-image-editor.com//styles/2014/images/example_image.png") no-repeat;
-  background-size: 100%;
+  background: url("https://s3.amazonaws.com/onepageamy/IMG_0713.JPG") no-repeat;
+  background-size: 200%;
+  background-position: center;
 }
 .cd-timeline-img.cd-movie {
   background: url("https://fvcproductions.files.wordpress.com/2014/03/b73f3624e9d9a4cd64e94fc4f8c26e91.png") no-repeat;
   background-size: 100%;
 }
+.cd-timeline-img.cd-world {
+  background: url("http://www.mapsnworld.com/globe-australia.jpg") no-repeat;
+  background-size: 130%;
+  background-position: center;
+}
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  background: url("http://image.shutterstock.com/display_pic_with_logo/2067779/175495322/stock-vector-business-woman-employee-being-happy-sitting-at-her-desk-with-laptop-tablet-and-cell-phone-hand-175495322.jpg") no-repeat;
+  background-size: 175%;
+  background-margin-top: 200px;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -311,7 +319,8 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
-    margin-left: 0;
+    margin-left: -50px;
+    margin-right: -50px;
     padding: 1.6em;
     width: 45%;
   }
