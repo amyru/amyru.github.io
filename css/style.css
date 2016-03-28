@@ -164,8 +164,8 @@ header h1 {
   background-size: 100%;
 }
 .cd-timeline-img.cd-world {
-  background: url("http://www.mapsnworld.com/globe-australia.jpg") no-repeat;
-  background-size: 130%;
+  background: url("../world-07.jpg") no-repeat;
+  background-size: 120%;
   background-position: center;
 }
 .cd-timeline-img.cd-location {
